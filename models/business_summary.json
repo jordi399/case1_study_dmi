@@ -1,0 +1,57 @@
+{
+  "avg_ticket_inr": 31163.470642303768,
+  "contribution_per_repeat_inr": 1869.808238538226,
+  "value_by_auc": [
+    {
+      "AUC": 0.5,
+      "capture_rate": 0.30029120559114736,
+      "net_value_inr": -1123217.3613681295
+    },
+    {
+      "AUC": 0.55,
+      "capture_rate": 0.3432731508444962,
+      "net_value_inr": -639884.237374662
+    },
+    {
+      "AUC": 0.6,
+      "capture_rate": 0.389217072967801,
+      "net_value_inr": -123243.60425582062
+    },
+    {
+      "AUC": 0.65,
+      "capture_rate": 0.4359597304268242,
+      "net_value_inr": 402378.8290766021
+    },
+    {
+      "AUC": 0.7,
+      "capture_rate": 0.48491555037856726,
+      "net_value_inr": 952888.3338341648
+    },
+    {
+      "AUC": 0.75,
+      "capture_rate": 0.5378983276478908,
+      "net_value_inr": 1548681.0813352102
+    },
+    {
+      "AUC": 0.8,
+      "capture_rate": 0.594675097761877,
+      "net_value_inr": 2187137.3798507787
+    }
+  ],
+  "recall_drop": {
+    "true_repeaters_in_base": 30070.000000000004,
+    "recall_from": 0.48491555037856726,
+    "recall_to": 0.3849155503785673,
+    "additional_repeaters_missed": 3006.9999999999995,
+    "disbursal_at_stake_inr": 93708556.22140741,
+    "contribution_at_stake_inr": 5622513.373284445,
+    "expected_lost_contribution_inr": 1124502.6746568892,
+    "cac_to_replace_lost_loans_inr": 902100.0,
+    "offer_spend_wasted_inr": 451049.99999999994
+  },
+  "hv_customers_share": 0.02383,
+  "ab_n_per_arm_3pts": 3767,
+  "fairness_min_ratio_gender": 0.9689432004904414,
+  "fairness_min_ratio_city": 0.6224477798173943,
+  "max_feature_psi": 0.5569844026029817
+}

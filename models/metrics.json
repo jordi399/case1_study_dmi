@@ -1,0 +1,86 @@
+{
+  "oot": {
+    "Constant 30% (no model)": {
+      "AUC": 0.5,
+      "Gini": 0.0,
+      "KS": 0.0,
+      "PR_AUC": 0.30150511739915714,
+      "PR_AUC_random": 0.30150511739915714,
+      "Brier": 0.21060123511661613,
+      "Brier_base_rate": 0.2105997815812776,
+      "LogLoss": 0.6121376523777705
+    },
+    "Baseline: WoE logistic": {
+      "AUC": 0.5020911378890827,
+      "Gini": 0.004182275778165323,
+      "KS": 0.00700315454590017,
+      "PR_AUC": 0.3050616247785984,
+      "PR_AUC_random": 0.30150511739915714,
+      "Brier": 0.21084300797776964,
+      "Brier_base_rate": 0.2105997815812776,
+      "LogLoss": 0.6127217826188626
+    },
+    "Advanced: LightGBM": {
+      "AUC": 0.5026806661143584,
+      "Gini": 0.005361332228716709,
+      "KS": 0.012950542706914592,
+      "PR_AUC": 0.30159715229050615,
+      "PR_AUC_random": 0.30150511739915714,
+      "Brier": 0.21139528953805786,
+      "Brier_base_rate": 0.2105997815812776,
+      "LogLoss": 0.6140666195111755
+    }
+  },
+  "permutation_p_value": {
+    "woe": 0.28471528471528473,
+    "lgbm": 0.22277722277722278
+  },
+  "lgbm_best_params": {
+    "num_leaves": 31,
+    "learning_rate": 0.01,
+    "n_estimators": 800,
+    "min_child_samples": 300,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 1.0
+  },
+  "lgbm_cv_auc": 0.5051586778276234,
+  "positive_control": [
+    {
+      "signal_strength": 0.0,
+      "repeat_rate": 0.29935,
+      "WoE logistic AUC": 0.5027149922524878,
+      "LightGBM AUC": 0.49830519064861256
+    },
+    {
+      "signal_strength": 0.15,
+      "repeat_rate": 0.30013,
+      "WoE logistic AUC": 0.5409131349592131,
+      "LightGBM AUC": 0.5301019704329294
+    },
+    {
+      "signal_strength": 0.3,
+      "repeat_rate": 0.29937,
+      "WoE logistic AUC": 0.5883628624018176,
+      "LightGBM AUC": 0.5814559310762629
+    },
+    {
+      "signal_strength": 0.5,
+      "repeat_rate": 0.29872,
+      "WoE logistic AUC": 0.6474575093250664,
+      "LightGBM AUC": 0.6438364493778863
+    },
+    {
+      "signal_strength": 0.8,
+      "repeat_rate": 0.29854,
+      "WoE logistic AUC": 0.7235468498604894,
+      "LightGBM AUC": 0.7205345302271937
+    },
+    {
+      "signal_strength": 1.2,
+      "repeat_rate": 0.29834,
+      "WoE logistic AUC": 0.794255005014129,
+      "LightGBM AUC": 0.7933587405547489
+    }
+  ]
+}

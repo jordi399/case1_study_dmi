@@ -1,0 +1,14 @@
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+data/processed/*
+!data/processed/.gitkeep
+catboost_info/
+env/
+__pycache__
+*.pyc
+.DS_Store
