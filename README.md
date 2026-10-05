@@ -128,18 +128,6 @@ Retention offers go to the top 30% by score. Figures are per 100K customers; ass
 └── requirements.txt
 ```
 
-## How to run
-
-```bash
-python -m venv env && source env/bin/activate
-pip install -r requirements.txt
-cd notebooks
-jupyter nbconvert --execute --to notebook --inplace 01_data_quality_eda.ipynb
-jupyter nbconvert --execute --to notebook --inplace --ExecutePreprocessor.timeout=1800 02_modelling.ipynb   # ~7 min (tuning + positive control)
-jupyter nbconvert --execute --to notebook --inplace 03_business_impact.ipynb
-```
-
-Run the notebooks in order: 02 reads 01's output, and 03 reads 02's.
 
 ## Method notes
 
